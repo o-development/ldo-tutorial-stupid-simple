@@ -1,8 +1,11 @@
-import { Login } from "./Login";
+import { BrowserSolidLdoProvider } from '@ldo/solid-react';
+import { Login } from './Login';
 
 function App() {
   return (
-    <Login />
+    <BrowserSolidLdoProvider>
+      <Login />
+    </BrowserSolidLdoProvider>
   );
 }
 
